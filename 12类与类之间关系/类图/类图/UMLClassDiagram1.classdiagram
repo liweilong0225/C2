@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1f39fedf-3eef-4a42-b866-32e1b84776dd" name="UMLClassDiagram1" linkedPackageId="22659c48-bd93-43e6-82b4-a9e7b2d52474" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5b3796c9-de40-42e0-a063-214869404f53" name="CPerson" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ad261aa3-ab90-46b8-a6d0-bc620a2f33bc" />
+        <suppliersInternal>
+          <dependency Id="c1d36c5b-71f3-49b1-96ff-778d7ed83ba5">
+            <classMoniker Id="873d0e16-b7dc-431f-b6c3-7fb1dc71e4ed" LastKnownName="CComputer" />
+            <elementDefinition Id="e7386c9a-b617-41c1-81bc-786a49e1f69a" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="63b9fd1e-76a7-4f28-90b9-e2d430f3ceed" isDerived="false" sourceEndRoleName="CPerson" targetEndRoleName="CHead" isLeaf="false" isAbstract="false">
+            <classMoniker Id="135fb428-16a3-41dd-ac71-ec79c66d9d8d" LastKnownName="CHead" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1a2844b8-58d1-4235-901c-fc9a4c9356bf" name="CPerson" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="60457c12-65a6-4876-bf31-e10848963ff1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e33af255-9400-4951-a9b7-385161e0996a" name="CHead" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="7ff753ce-8a1a-44cf-a138-fc8e3bd1a161" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d80e2adf-0439-4f90-8d64-7861c438c085" />
+          </association>
+          <association Id="1d292cbb-6e26-43e9-9e22-8d36f84de2a3" isDerived="false" sourceEndRoleName="CPerson" targetEndRoleName="CHand" isLeaf="false" isAbstract="false">
+            <classMoniker Id="23413ba7-b233-4974-889f-9859d65a1892" LastKnownName="CHand" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1a4c264e-89eb-44bd-bd8d-aa58936302eb" name="CPerson" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ee02a6ce-00ba-44e2-bd82-bebb9b9ea947" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8923f38-923b-4bc0-9706-0315ac443fee" name="CHand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="6a4a3d47-c14d-46d3-9b58-53fa7bd0d510" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="74040bee-585e-4f4e-af8e-18fc8dac21ce" />
+          </association>
+          <association Id="b3ad0646-bf4b-4467-bf88-5140e431771b" isDerived="false" sourceEndRoleName="CPerson" targetEndRoleName="CFriend" isLeaf="false" isAbstract="false">
+            <classMoniker Id="164a2c81-cd70-4529-bdc4-d72a8baaba9a" LastKnownName="CFriend" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2eeae810-d285-451d-9a03-80e5f39874e6" name="CPerson" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e1dd446c-0231-42f5-a91e-f90ede66547e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a227846d-6212-4ab8-bbc6-a27e2cd90617" name="CFriend" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cfcbeaad-7509-4a7c-8beb-e0e354884d11" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7764891c-ccb6-4acf-8e4f-dc6cb2d0b97e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a73233b4-f7a6-4d17-844a-20027887d9a4" name="CHead head" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b48231bb-eed5-4e0b-aaf2-4a6cc75357ca" />
+          </property>
+          <property Id="9ba650f7-ef2b-40e0-825b-deed25b2d2c4" name="CHand hand" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c30ac163-bc74-4317-960c-1b2defe39e3c" />
+          </property>
+          <property Id="be40919f-fa98-4f1f-9eb6-6bbd298ae69c" name="CFriend* m_pFriend" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4dfb4065-786b-496c-81d9-156f86c04fd4" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="81e8152a-79c5-480b-b9a9-e98a938287d2" name="void Do" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="df2246be-ec69-419a-bd0d-5bfd422fe187" />
+          </operation>
+          <operation Id="bdfd57fa-ae7f-429f-8b3a-1e161200612c" name="void Coding" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c5d5b77b-5441-47bb-a921-c0596bcc280b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1746ba09-296a-4838-8f3f-4d6a65a140aa" name="CComputer&amp; cp" direction="In" isUnique="false">
+                  <elementDefinition Id="310af037-e0ef-422d-9c56-0cfd96bd0abe" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4fe8bcb3-51bd-428b-9e0b-147dc76c428e" name="void LOL" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3d77ae37-d818-4fd8-83bb-7a1e848f602c" />
+          </operation>
+          <operation Id="61c52971-f275-4ff5-bf5d-85e3e586f642" name="void FindFriend" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="28946a23-871d-433a-9a09-79abe83bbb02" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="06334a62-5cf6-42ea-886c-399f7884384e" name="CFriend* pFriend" direction="In" isUnique="false">
+                  <elementDefinition Id="976e4e1d-4617-4d79-ad10-cacdf52b57d9" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="135fb428-16a3-41dd-ac71-ec79c66d9d8d" name="CHead" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0e93232b-cf22-44c5-96ef-f535cd1f6590" />
+        <ownedOperationsInternal>
+          <operation Id="b457b5be-0251-43fc-b886-a43f53de29dc" name="void Say" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4b0cd3e2-4b19-478e-bd99-e5f36dc9b6fb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="23413ba7-b233-4974-889f-9859d65a1892" name="CHand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="41cca97d-7a64-4aa9-9822-6b8c06f6d8ca" />
+        <ownedOperationsInternal>
+          <operation Id="0869f8d5-1ef0-46c6-be84-9ae5c5ffc4c4" name="void Move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d231dd3a-2233-40eb-9537-a92db21bd92a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="873d0e16-b7dc-431f-b6c3-7fb1dc71e4ed" name="CComputer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2d992bf1-b2e7-49e4-8e7c-7f5c50a1c2d1" />
+        <ownedOperationsInternal>
+          <operation Id="da409861-aa43-473d-8fdc-8feade165382" name="void Code" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="505e697b-8698-408d-9e45-4f914b5c9647" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="164a2c81-cd70-4529-bdc4-d72a8baaba9a" name="CFriend" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="301f74d1-c313-4c6a-940e-fc8db0bc9552" />
+        <ownedAttributesInternal>
+          <property Id="bed6c41c-6e4f-4508-b16a-95456095743e" name="int rp" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f43511b9-05cd-4e72-b9f7-35a8ad476f36" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="40c96b24-c19d-427d-b0ed-ae54dec7acfc" name="void Play" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="38788cea-d570-4981-bb39-37b7b07ed6b9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ea99db58-0c05-46f3-8975-5e396a228809" name="CFamily" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7e1bb99d-b84c-409a-bec6-81ddb30adc9d" />
+        <targetEnds>
+          <association Id="ed01f13b-2f96-4aac-8864-cc9ad56543e2" isDerived="false" sourceEndRoleName="CFamily" targetEndRoleName="CPerson" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5b3796c9-de40-42e0-a063-214869404f53" LastKnownName="CPerson" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83885ef6-a06f-4542-a086-ffbc0ac41838" name="CFamily" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="397ac037-cf6b-4b6d-b724-40ff00fb45b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e7fd27fd-df16-414b-9cc0-6ad415790c5b" name="CPerson" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c199a671-eb5c-49a4-8225-87a655390d18" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7d93d3ec-fc2f-4d8f-869c-5a62bfe2d3a8" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="dca47a9f-fe4f-414e-8edc-3f1d5f71a331" name="CPerson* arr" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="7783aca6-18b4-44b6-998b-cbebe06b61a7" name="Lower" value="10">
+                <elementDefinition Id="164b8c7b-0669-41af-ae43-7c5b0cc9076e" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="3d1faf22-a4fe-47a0-a8e8-33609a72dc41" name="Upper" value="10">
+                <elementDefinition Id="c808c2b3-8f14-44f2-a749-a7f6f340162e" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="eb6aba48-63cc-4e4d-9e63-afde48b7ceb8" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8d732551-6e40-4823-97da-e201a3881a0c" name="void AllPersonCoding" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="909c55f9-46d8-4d33-9b9d-399fa0132ea2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7aefe352-b0b7-42f2-9788-c2d6e71fd357" name="CComputer&amp; cp" direction="In" isUnique="false">
+                  <elementDefinition Id="24260493-1f19-446b-b317-1543e36c69ad" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="53997f8c-8463-4acb-8693-e039a9ff12fe" name="void PushPerson" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a8c2d871-c2b1-4dc4-864b-631a3aa4c436" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a10c411b-1e8f-4de6-bfcf-74632c582ed6" name="CPerson* ps" direction="In" isUnique="false">
+                  <elementDefinition Id="0765fc01-6ba7-4591-99c8-cb284b0c8857" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="266d0bea-a47a-4345-9ef9-c1adc4a415d9" name="CChina" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="82adccd0-c68a-494e-ae37-4a10174ccbd2" />
+        <generalsInternal>
+          <generalization Id="fe4061cf-fef2-49ce-a6df-a4a3181b8cee" isSubstitutable="false">
+            <classMoniker Id="5b3796c9-de40-42e0-a063-214869404f53" LastKnownName="CPerson" />
+            <elementDefinition Id="e9dfe5bc-8bbe-44d2-b2e1-334e177f5c34" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="22659c48-bd93-43e6-82b4-a9e7b2d52474" name="类图">
+    <elementDefinition Id="b40f93a9-4fe5-4900-b552-b293000ca591" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c5f482e5-fbd3-4310-b0f0-82478e57495c">
+        <profileInstance Id="454ee918-8bbd-4cfc-aac1-365c7f0e07e4" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="483559d7-08ca-4192-8e65-205e1c47cd2e">
+        <profileInstance Id="2d7f73ea-9bea-4bb5-a881-ba07b8d1add7" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
