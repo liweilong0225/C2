@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14宠物小屋练习", "14宠物小屋练习\14宠物小屋练习.vcxproj", "{F764B5F3-5E01-4ACD-A415-E69E0DCC7876}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F764B5F3-5E01-4ACD-A415-E69E0DCC7876}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F764B5F3-5E01-4ACD-A415-E69E0DCC7876}.Debug|Win32.Build.0 = Debug|Win32
+		{F764B5F3-5E01-4ACD-A415-E69E0DCC7876}.Release|Win32.ActiveCfg = Release|Win32
+		{F764B5F3-5E01-4ACD-A415-E69E0DCC7876}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

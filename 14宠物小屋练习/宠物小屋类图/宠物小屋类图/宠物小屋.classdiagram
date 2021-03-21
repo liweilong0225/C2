@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="49b3f98e-c66e-48e2-9b22-403a4f3aeaf5" name="宠物小屋" linkedPackageId="a89e68b2-81fc-4202-86f8-5e9da4f4f597" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6cbe2a53-a7a0-49d5-8897-1fc9f00572c4">
+      <profileInstance Id="2a55fb2e-942a-462c-ae57-6f972c9561a5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9b96fedd-908a-4786-93f8-f9385747ffc1">
+      <profileInstance Id="4b4382ac-f556-4d9e-9c88-02d91b850acb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="198a2474-8bf5-4b46-a706-aec9a898db8f" name="CHouse" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a3742df6-1691-4975-a380-2e6c37686bab" />
+        <targetEnds>
+          <association Id="f93a3650-d657-4076-9755-fe17dbdea628" isDerived="false" sourceEndRoleName="CHouse" targetEndRoleName="CCage" isLeaf="false" isAbstract="false">
+            <classMoniker Id="30c374a8-c789-4611-be93-a59f5bcc341d" LastKnownName="CCage" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e14de90b-1309-4b47-a11c-6e4612255f79" name="CHouse" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="713c9cde-7b00-433e-abab-5eb9fb8ad956" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5e5ff426-5ee4-41a1-b54b-79875e916ed0" name="CCage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="14befd23-f28d-450d-9e91-49a444f62ac8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b7ea852c-2805-4da8-859e-b5dbcb8955b6" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9a2b4c56-05f8-448d-bd9a-50f31ae43592" name="list&lt;CCage*&gt;lst;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="114d4b81-1be8-4237-91bf-ec1053764e44" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="23cd6027-a980-4f1c-b845-c27aa4e445a1" name="CAnna" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d8361048-6ca1-4ee2-96bd-cb26c314bca2" />
+        <suppliersInternal>
+          <dependency Id="180bbef0-bdc8-4452-906d-9b6a302c2b29">
+            <classMoniker Id="198a2474-8bf5-4b46-a706-aec9a898db8f" LastKnownName="CHouse" />
+            <elementDefinition Id="84f58865-13cd-4a29-adad-a78b360834f7" />
+          </dependency>
+          <dependency Id="3639afe7-de71-47a3-b341-cd2969713e41">
+            <classMoniker Id="30c374a8-c789-4611-be93-a59f5bcc341d" LastKnownName="CCage" />
+            <elementDefinition Id="36f2d17b-5d61-4477-9678-0dd8823e52c9" />
+          </dependency>
+          <dependency Id="1ce71bd1-0955-4a77-9a3e-9aa3cccf04c0">
+            <classMoniker Id="f695161b-c3ab-4b98-a169-172a009507d2" LastKnownName="CAnimal" />
+            <elementDefinition Id="c3579138-2e6e-4e00-9d00-d3e1f9b742a2" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="77dcd458-79f5-4623-abff-bb9637484bdc" name="void AndAnimalPlay" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cc345998-71a0-40d8-9cca-775f0587e199" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b15b2862-3b03-4e43-8c25-b8637e6af763" name="CHouse&amp; house" direction="In" isUnique="false">
+                  <elementDefinition Id="e0762be4-17c0-4482-959a-7df2a1f983c4" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f3b30768-c2e9-47e6-8bff-5ab0c7fb9aaf" name="int nID" direction="In" isUnique="false">
+                  <elementDefinition Id="0f0f27c0-c685-4c31-9e45-5874b9762d90" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9d49a849-32af-4144-ae39-f0e387ce5acf" name="void LookLook" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e57589ed-569e-450a-b9ef-317949725a22" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="625d87bc-c469-4a9a-b04d-7f23c468e358" name="CHouse&amp; house" direction="In" isUnique="false">
+                  <elementDefinition Id="e4d51c78-093c-44a1-b366-66e46eb60bf8" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="72540b1a-9f05-4e2b-87d1-71abd414bd09" name="void PushAnimal" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="96f304fb-125e-4db0-aedb-71780534b33c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d8413c5c-6793-4294-9838-d7dbfb7285c2" name="CHouse&amp; house" direction="In" isUnique="false">
+                  <elementDefinition Id="5b64de7e-eb12-4c7d-8935-db23e39d1aa9" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9f07d39e-dca0-4468-8d5d-d3c3a6ea9430" name="int nID" direction="In" isUnique="false">
+                  <elementDefinition Id="d584f182-d1da-47fc-9b07-42100a623f68" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dc9427a8-17ee-419c-aa1f-3c599ed058f0" name="CAnimal* pAnimal" direction="In" isUnique="false">
+                  <elementDefinition Id="f7402f2e-a34f-45ae-b93b-9db2f5411796" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="69232b89-37ea-4048-8e3e-fa4edb83d994" name="void PushCage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d07ca417-af6c-4e37-8e94-ab63943b008f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5201dc2d-278a-40d8-a4b0-489ccd98721f" name="CHouse&amp; house" direction="In" isUnique="false">
+                  <elementDefinition Id="3f628d83-7e1f-4b1a-b4c8-ca8f53ccf918" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="139c84d0-c19d-49a0-b35f-2a79feedd40a" name="int nColor" direction="In" isUnique="false">
+                  <elementDefinition Id="3db2da1f-f5d8-4943-9267-3c3c54ad4097" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8175942d-f6d5-4b25-8144-16a1eef2d2b7" name="CDog" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="726ff312-639c-4e33-aacf-869406d2a412" />
+        <generalsInternal>
+          <generalization Id="0f5a23a7-6a18-47ad-9de7-2e16a46a35f3" isSubstitutable="false">
+            <classMoniker Id="f695161b-c3ab-4b98-a169-172a009507d2" LastKnownName="CAnimal" />
+            <elementDefinition Id="d8d0a88b-34d2-498f-aae7-671af6175aeb" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="00d57f30-4592-4ddb-9dfd-1c7e187dc33d" name="virtual void Play" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0a7093a2-88fc-42c5-a76d-934f612fae54" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="085c048f-5af9-4525-9db5-8e3d94f0a542" name="CSnake" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="75c06bd1-7bc9-40ec-9448-095bad3ae7a5" />
+        <generalsInternal>
+          <generalization Id="d4191f8d-4f0f-435a-b03b-f64d678eb1e4" isSubstitutable="false">
+            <classMoniker Id="f695161b-c3ab-4b98-a169-172a009507d2" LastKnownName="CAnimal" />
+            <elementDefinition Id="aeaedfaf-ff65-42ab-971c-bbe57996f041" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="b1608c6d-16f7-4ad2-8dbc-137d7b257635" name="virtual void Play" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="46e43d40-4c00-4cc4-9948-65acb123f786" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aa425f51-32e9-40ab-b234-5886ea542680" name="CCat" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="90110d8e-7478-4857-87cd-c36e32b29b48" />
+        <generalsInternal>
+          <generalization Id="cf688536-777c-4015-9448-9ecb34930cce" isSubstitutable="false">
+            <classMoniker Id="f695161b-c3ab-4b98-a169-172a009507d2" LastKnownName="CAnimal" />
+            <elementDefinition Id="ab43cbfd-e1ad-4048-b85f-ca78d32a6089" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="7f78ea68-0d92-47c5-9665-4d2794f05bad" name="virtual void Play" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6053abc0-a9e9-49c3-8a94-d6eae728baec" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f695161b-c3ab-4b98-a169-172a009507d2" name="CAnimal" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1f26cb0c-6fc3-4d4f-ae7f-3282d68aab4d" />
+        <ownedAttributesInternal>
+          <property Id="fe8ff7fa-9e51-4b28-9300-4fb38f68c722" name="string m_strColor;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2bdb8f66-cccd-43e6-b693-496a35dbd2f4" />
+          </property>
+          <property Id="a59b1f0f-5ff0-416d-8021-45e82a2ec38c" name="string m_strName;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="697e1785-f79c-4bef-9324-95f3b07594b1" />
+          </property>
+          <property Id="fff42057-5e10-4273-836b-446c93e79ffe" name="str m_strSex;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="65019fd1-2113-4a05-8b80-3d6abfdf7763" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ec512085-6871-4843-a159-57fb38f4c05c" name="virtual void  Paly()=0" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="372bf5aa-3233-43f8-bb27-2d8c690a159c" />
+          </operation>
+          <operation Id="537e12e2-f9c3-4a81-8538-ec07c5e0cd2c" name="void Init" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="226bd2d7-f514-4736-ba4a-ea89bf1ddf4d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8a6d9f50-94e5-410c-ba8d-aba3221c1131" name="string strColor" direction="In" isUnique="false">
+                  <elementDefinition Id="3583dcf2-5c6b-4bf5-b420-425a040cdaaf" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="743007dc-68d4-4c7c-bf34-d6f89cc78b32" name="string strName" direction="In" isUnique="false">
+                  <elementDefinition Id="b638744e-96ab-4129-b35a-055952ccdff5" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a7c4ef36-bb36-422b-9d6e-6c015533b613" name="string strSex" direction="In" isUnique="false">
+                  <elementDefinition Id="d1565500-5f59-4619-9e82-f75f7e50d7a4" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="39fe70db-1acd-47e5-b7a1-78d66d7c9bd5" name="void Show" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e77a93fa-6fde-4839-9b9f-e88fc3b3e66b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="30c374a8-c789-4611-be93-a59f5bcc341d" name="CCage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f03ce81e-732f-4e36-afcb-39e050d9cf96" />
+        <targetEnds>
+          <association Id="0bff7901-bd1e-4aa3-a0e2-3b8f46c79cf3" isDerived="false" sourceEndRoleName="CCage" targetEndRoleName="CAnimal" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f695161b-c3ab-4b98-a169-172a009507d2" LastKnownName="CAnimal" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b200665-e439-46c5-94ea-0db754bd0cf5" name="CCage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9de84754-817c-436c-aca8-c07a68240d7e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b2f65478-1835-4053-ba91-beed9785db2c" name="CAnimal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="75d2a9e8-6ba7-419f-9615-6ce5468da0a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="459809db-a0d4-4eea-a5ac-c783e0c3d09d" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="b3c33a97-47ba-4733-8df0-32dbb588f70e" name="CAnimal* m_pAnimal;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c9da9620-0019-4288-aaf7-f1f01b2b17c2" />
+          </property>
+          <property Id="f5039cdb-a7d9-4c25-a9e1-ddd0bea070c5" name="int nID;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8b89e195-3857-4ab4-9f4d-8ffa8c63b2d3" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a89e68b2-81fc-4202-86f8-5e9da4f4f597" name="宠物小屋类图">
+    <elementDefinition Id="7753f259-8608-4a84-8b70-ed12361e5b48" />
+  </package>
+</logicalClassDesignerModel>
