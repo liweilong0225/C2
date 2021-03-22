@@ -1,0 +1,1586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="e0cc66fc-3ab8-4476-b738-4fc826bc4d2e"
+  name="飞机大战类图" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="8ff5ee76-7759-4686-a261-fdb985205e53"
+        name="CBack"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="d476d5b1-c80e-48cd-8b7a-c831851d9eb1"
+            name="HBITMAP m_hBmpBackDown"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="89b5b57c-5def-4b51-ba5a-52fe4f7227b5"
+            name="HBITMAP m_hBmpBackUp"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="066bf423-91cf-4a68-8705-0a5b74f21c0a"
+            name="int x"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="67d7dd10-ad7b-4104-b7ba-1b226bd766e1"
+            name="int y"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0bb21e03-a948-4d4d-8667-5b7c31c091fa"
+            name="void InitBack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="063c8535-f915-4273-b673-e5585eae3624"
+                  name="HINSTANCE hIns"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9a0589ec-74e6-4dca-a0b6-fed143ccc841"
+            name="void ShowBack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7f581bd4-d3dc-4c2b-9da0-add6ea9d57b7"
+                  name="HDC hdc"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cfdb9b4e-3fb5-4cd3-b37c-2d84ee196ed4"
+            name="void MoveBack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7cf283af-ca3e-4c6e-8480-14ebc4fb3735"
+        name="CPlayer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f105a47d-f731-46ea-961a-98fa6f397433">
+            <classMoniker
+              Id="6d3b39a8-d0c1-409b-9ff4-3b85af98bd2e"
+              LastKnownName="CGunner"
+              LastKnownLocation="飞机大战类图.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="ba20e4a4-5dcd-43ea-89ca-3befadba43cf"
+            name="HBITMAP m_hBmpPlayer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0f354583-3c8b-4fcf-accf-de6effa7882e"
+            name="int x"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4080df82-6b47-4242-8fd7-2c0eeed58359"
+            name="int y"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f2c456a2-bc0f-4f57-b29a-5be9a6b0df8c"
+            name="int m_nGunnerStyle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d46d98c8-c61b-402a-896f-2ea112c78be1"
+            name="void InitPlayer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0a507409-77cb-4575-b925-f09971ab825c"
+                  name="HINSTANCE hIns"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="84e7791c-bfe2-4582-8f2f-506df8630a90"
+            name="void ShowPlayer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c91b7672-1743-4ae2-bf8b-129e2ef204f6"
+                  name="HDC hdc"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a37d3161-7c1f-496b-8268-3dbfb314f726"
+            name="void MovePlayer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9c6d5bda-4730-4d5c-b4c0-0c3391cb0372"
+                  name="int FX"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3d54b343-8b5f-4ceb-b8b1-f43adc772783"
+            name="void SendGunner"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cfb19ff7-54a4-4767-97d9-3163c7ff749a"
+                  name="HINSTANCE hIns"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3f186148-a4e5-4e6d-aff8-ad77dcf275b5"
+                  name="CGunner&amp; gunBox"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5f8895b8-3ed3-42d0-81d7-1afc78ead185"
+        name="CGunnerBox"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="c5618faa-c95d-4151-ac71-232d47914c9a"
+            isDerived="false"
+            sourceEndRoleName="CGunnerBox"
+            targetEndRoleName="CGunner"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6d3b39a8-d0c1-409b-9ff4-3b85af98bd2e"
+              LastKnownName="CGunner"
+              LastKnownLocation="飞机大战类图.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ceafb068-dd60-471c-992d-3da041a5f124"
+                  name="CGunnerBox"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="44287e6c-7669-49e1-8fb6-c5cf706df077"
+                  name="CGunner"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="fbd5ba90-6ef4-4ff9-9c54-f4aed2576668"
+            name="list&lt;CGunner*&gt;m_lstGunner"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7b31fb58-b447-4060-9daa-1206831fb5b6"
+            name="void AllGunnerMove"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="568be58c-5456-4fb2-9119-e55e812b953c"
+            name="void AllGunnerShow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f4185d23-f8c6-42e3-a453-553cee622a2d"
+                  name="HDC hdc"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f01780f7-c982-42cf-930f-a529c2c68544"
+        name="CPlaneApp"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="796f3649-667c-442f-859c-b289681f6399">
+            <interfaceMoniker
+              Id="518de1ae-f029-4c30-ad7d-8a6ec09e74b4"
+              LastKnownName="CGameApp"
+              LastKnownLocation="飞机大战类图.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="71a67fd1-790f-4cc8-a8fd-111674533b2d"
+            isDerived="false"
+            sourceEndRoleName="CPlaneApp"
+            targetEndRoleName="CPlayer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7cf283af-ca3e-4c6e-8480-14ebc4fb3735"
+              LastKnownName="CPlayer"
+              LastKnownLocation="飞机大战类图.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="42d3c334-455a-4cfa-a2b5-e4dfc65776e8"
+                  name="CPlaneApp"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95bcf083-31e3-4ab5-805e-d1be33c4873f"
+                  name="CPlayer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5aba11bf-3bd9-4285-b7be-db97a4eb03fc"
+            isDerived="false"
+            sourceEndRoleName="CPlaneApp"
+            targetEndRoleName="CBack"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8ff5ee76-7759-4686-a261-fdb985205e53"
+              LastKnownName="CBack"
+              LastKnownLocation="飞机大战类图.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa0a7adf-5240-4412-9513-7d81097b056f"
+                  name="CPlaneApp"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="345d4f29-2975-43b1-b809-17db87f9907d"
+                  name="CBack"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f52f715b-b900-4354-a9df-1cbc0d667052"
+            isDerived="false"
+            sourceEndRoleName="CPlaneApp"
+            targetEndRoleName="CFoePlaneBox"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5ce52911-7b71-4afd-a19b-8435a64ab064"
+              LastKnownName="CFoePlaneBox"
+              LastKnownLocation="飞机大战类图.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="869ad37a-e4e8-4069-a7d6-127f114a4d30"
+                  name="CPlaneApp"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ce34d075-c03f-4c58-a55d-686c79e9fc75"
+                  name="CFoePlaneBox"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="557f0a0e-8728-45a6-b488-20f8d81d8834"
+            isDerived="false"
+            sourceEndRoleName="CPlaneApp"
+            targetEndRoleName="CBlastFoePlaneBox"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ca7ab514-78cc-45d8-9b5a-1c7293e538d9"
+              LastKnownName="CBlastFoePlaneBox"
+              LastKnownLocation="飞机大战类图.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa354658-dde5-4519-a0c4-1922aa536eb7"
+                  name="CPlaneApp"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b48bc4a7-27c6-450f-8684-00518ae90bb8"
+                  name="CBlastFoePlaneBox"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f8230cfa-5d81-4207-adf4-235f8f356f01"
+            isDerived="false"
+            sourceEndRoleName="CPlaneApp"
+            targetEndRoleName="CGunnerBox"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5f8895b8-3ed3-42d0-81d7-1afc78ead185"
+              LastKnownName="CGunnerBox"
+              LastKnownLocation="飞机大战类图.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="70f16e0c-14ee-4fb7-b62b-76d62c18ba5a"
+                  name="CPlaneApp"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="111524a3-7d71-47d6-9a19-a1bc59c22fab"
+                  name="CGunnerBox"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="cddd0a76-fc92-42cc-8972-0c74c63f6ff8"
+            name="CPlayer plane"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c1dceac1-4c6d-426f-b6da-13872fe2b1e4"
+            name="CBack back"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="eb05671d-1b7b-4ed3-ba13-b7d546c86407"
+            name="CGunnerBox gunBox"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="325fcb64-ed80-4ca4-85cb-f59411e631ae"
+            name="CFoePlaneBox foeBox"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1fe99eed-10b0-4d14-92b6-9946f7361ee4"
+            name="CBlastFoePlaneBox blastBox"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="94b88956-3d32-4502-8f15-26ded85d830a"
+            name="virtual void OnCreateGame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="433b0f5d-a601-428e-a1d6-bc85abbf264b"
+            name="virtual void OnGameDraw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2c6e10cc-1742-4f5b-b1e1-a1eb57d790af"
+            name="virtual void OnGameRun"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c5955329-2c82-4c30-b797-ddedf7b089f0"
+                  name="WPARAM nTimerID"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fdc46efe-2f70-4ecf-bec1-ef47f800ed85"
+            name="virtual void OnKeyDown"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a0a40edb-ff0e-427f-904e-9d705ccdbf7b"
+                  name="WPARAM wParam"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1910bd3d-a2d4-42ee-8bfc-c67c214bd1ec"
+            name="void GunnerHitFoePlane"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9e734321-08ac-4da7-9892-60e60cf97837"
+            name="bool IsGameOver"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6d3b39a8-d0c1-409b-9ff4-3b85af98bd2e"
+        name="CGunner"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="513c1b87-54ab-49a3-82fb-087387808772"
+            name="HBITMAP m_hBmpGunner"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c2b59452-d2ed-47d9-bf22-2bf338473794"
+            name="int x"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6d45030b-00bf-481f-9071-0a785529d909"
+            name="int y"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="62acb331-d072-40bd-b014-96cdc6648e6a"
+            name="void InitGunner"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8693c45e-4bb6-4015-a6f5-17bb00907056"
+                  name="HINSTANCE hIns"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0c001c48-3803-4db2-b851-0dbcac3f3cc5"
+                  name="int x1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e53cfca5-ec75-46de-9d1a-15e9a224ec15"
+                  name="int y1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3dd6ceb2-291d-43da-b152-d9cdd92f79ad"
+            name="void ShowGunner"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9f00865e-e406-4261-a964-9c556024581b"
+                  name="HDC hdc"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="dc18d40c-9ab3-475c-a4b4-b5bd5a332b18"
+            name="void MoveGunner"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5ce52911-7b71-4afd-a19b-8435a64ab064"
+        name="CFoePlaneBox"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="3bca97a2-7f07-42c8-a1ea-6b352fb4bc7d"
+            isDerived="false"
+            sourceEndRoleName="CFoePlaneBox"
+            targetEndRoleName="CFoePlane"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="92faf5c0-5e8b-4c7c-bc81-cbd94acc18c3"
+              LastKnownName="CFoePlane"
+              LastKnownLocation="飞机大战类图.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67cfee9d-0724-4f3e-bf5a-25164c883da9"
+                  name="CFoePlaneBox"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5452f0e0-b179-428a-940f-b4d8867cbc7a"
+                  name="CFoePlane"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="59472fa4-a374-4cef-afff-fb53cbf03513"
+            name="list&lt;CFoePlane*&gt;m_lstFoePlane"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="523ee8f1-f8db-4296-8894-804f260ef1ee"
+            name="void AllFoePlaneMove"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="06a861f0-76cc-48d7-804a-613b4d4242ab"
+            name="void AllFoePlaneShow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b49b2dc5-d691-4ad6-a13c-0188cba17b88"
+                  name="HDC hdc"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a26dade2-6478-42ef-a146-607710589b77"
+            name="void CreateFoePlane"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7c89ba95-3cfc-4582-8187-ffad8a45fbfd"
+                  name="HINSTANCE hIns"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ca7ab514-78cc-45d8-9b5a-1c7293e538d9"
+        name="CBlastFoePlaneBox"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4f857abf-8b08-40e5-854a-3300a058aa5b"
+            isDerived="false"
+            sourceEndRoleName="CBlastFoePlaneBox"
+            targetEndRoleName="CFoePlane"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="92faf5c0-5e8b-4c7c-bc81-cbd94acc18c3"
+              LastKnownName="CFoePlane"
+              LastKnownLocation="飞机大战类图.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3884e713-7021-4a56-9ffe-f975a55aa3ce"
+                  name="CBlastFoePlaneBox"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9a0d234f-e814-4c37-982f-c6a44473e251"
+                  name="CFoePlane"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="47ea25d5-511d-4401-a4f2-f084e9dcef07"
+            name="list&lt;CFoePlane*&gt;m_lstBlastFoePlane"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b22bfad8-91bb-487a-b75c-e8fc4973b4d4"
+            name="void AllBlastFoePlaneShow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b3e084ba-0970-4a2f-9ff6-5635a03b5c6c"
+                  name="HDC hdc"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="58e54eeb-dd6a-494b-9386-214ea62a4f73"
+            name="void ChangeShowID"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f4b8a30b-3048-4543-a6ad-ca362f282743"
+        name="CBigFoePlane"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="24d43377-96be-4d9a-aa0a-96263aecd320">
+            <interfaceMoniker
+              Id="92faf5c0-5e8b-4c7c-bc81-cbd94acc18c3"
+              LastKnownName="CFoePlane"
+              LastKnownLocation="飞机大战类图.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ad4c70e6-4e1c-4642-abec-5cf3d02ec8ac"
+            name="virtual bool IsGunnerHitFoePlane(CGunner* pGunner)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ab95c971-0247-4de5-ab0d-f0de997ebda0"
+            name="virtual bool IsHitPlayer(CPlayer&amp; plane)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ee5cbac6-264b-4b24-a85d-553644a3849d"
+            name="virtual void FoePlaneMove()=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="db6b4b16-a531-4034-b9bf-ae3176a0bf08"
+            name="virtual void ShowFoePlane(HDC hdc)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a8f047dd-7949-4e29-9fd9-a0b985ec3528"
+            name="virtual void InitFoePlane(HINSTANCE hIns)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b488cfbb-8adc-4871-abf5-8317cc8a7818"
+        name="CMidFoePlane"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="cf9bf8c6-43c1-4ddc-a607-355e1369208e">
+            <interfaceMoniker
+              Id="92faf5c0-5e8b-4c7c-bc81-cbd94acc18c3"
+              LastKnownName="CFoePlane"
+              LastKnownLocation="飞机大战类图.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a850bfb3-8d28-4650-9a10-fedb121474f8"
+            name="virtual bool IsGunnerHitFoePlane(CGunner* pGunner)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="51be5b41-f25f-469e-9e40-8352b49663e6"
+            name="virtual bool IsHitPlayer(CPlayer&amp; plane)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="37d6111b-c465-4bc4-88fd-32d984c248ad"
+            name="virtual void FoePlaneMove()=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="976a6e46-933d-406b-a8b1-531f6d8b3b7f"
+            name="virtual void ShowFoePlane(HDC hdc)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1dd95a47-186c-4d91-9a65-9fc929461432"
+            name="virtual void InitFoePlane(HINSTANCE hIns)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ce94faa7-a732-4889-9568-92ac55ce5821"
+        name="CSmallFoePlane"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="20c77b33-4ae0-4a1e-b557-b9db0af1e64d">
+            <interfaceMoniker
+              Id="92faf5c0-5e8b-4c7c-bc81-cbd94acc18c3"
+              LastKnownName="CFoePlane"
+              LastKnownLocation="飞机大战类图.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="167d29c8-c149-49d9-8949-7261ab3af4ca"
+            name="virtual bool IsGunnerHitFoePlane(CGunner* pGunner)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c010a16d-a87e-48e3-b757-be4a6d1637a6"
+            name="virtual bool IsHitPlayer(CPlayer&amp; plane)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5c312308-b07f-44fb-bed2-15096cdd2eeb"
+            name="virtual void FoePlaneMove()=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a54a9c98-2364-4e80-8405-7a36d1872003"
+            name="virtual void ShowFoePlane(HDC hdc)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1b38c664-e02b-4aa4-b3e6-e736a758f466"
+            name="virtual void InitFoePlane(HINSTANCE hIns)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="518de1ae-f029-4c30-ad7d-8a6ec09e74b4"
+        name="CGameApp"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="92faf5c0-5e8b-4c7c-bc81-cbd94acc18c3"
+        name="CFoePlane"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="c23ef815-694c-4933-b91e-8dea81be9d01">
+            <classMoniker
+              Id="6d3b39a8-d0c1-409b-9ff4-3b85af98bd2e"
+              LastKnownName="CGunner"
+              LastKnownLocation="飞机大战类图.uml" />
+          </dependency>
+          <dependency
+            Id="f82085c0-3c63-45e2-a4f3-5ac084d186e1">
+            <classMoniker
+              Id="7cf283af-ca3e-4c6e-8480-14ebc4fb3735"
+              LastKnownName="CPlayer"
+              LastKnownLocation="飞机大战类图.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributes>
+          <property
+            Id="ba9c61d0-dc84-4b32-bc61-adce0622c611"
+            name="HBITMAP m_hBmpFoePlane"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2f40bdbd-0e28-4f95-8774-f821d64b3575"
+            name="int x"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c2e95dfe-92d6-4105-a1ac-86991eb2f607"
+            name="int y"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1512a6f4-3ff1-40c0-8270-e90c9f8c621f"
+            name="int m_nShowID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1b6d46da-c79a-48e3-a624-f4ed35234150"
+            name="int m_nBlood"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="a98fa966-4ab4-4431-959a-9cfa71cea3c6"
+            name="virtual bool IsGunnerHitFoePlane(CGunner* pGunner)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="725b4f3c-f23e-4e2e-82e2-7f73e2494e2b"
+            name="virtual bool IsHitPlayer(CPlayer&amp; plane)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7ccde973-4408-4045-b691-de16c9c7c807"
+            name="virtual void FoePlaneMove()=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f206fc37-7f44-426d-bf09-02c0086cc9b1"
+            name="virtual void ShowFoePlane(HDC hdc)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="123d9c21-690c-41b3-b27d-b41ae7918bbf"
+            name="virtual void InitFoePlane(HINSTANCE hIns)=0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c19b3693-9f5e-42c8-a5ad-7eed469dbbbd"
+            name="bool IsBoom"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2cc58805-88f1-4e3f-8e63-4d36212229bd"
+            name="void DownBlood"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="55649df1-7fd8-42a4-8c62-62ec4deb33ef"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="5a993007-aa13-4213-bb5e-e77dcf3d36e9"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e7ef9523-286a-4cf8-ab2a-2029fd8bf76a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="839b9ec5-aa56-48b3-b16d-cff32fd17bff"
+                  LastKnownName="WM_CREATE:&#xD;&#xA;1.初始化背景&#xD;&#xA;2.初始化玩家飞机&#xD;&#xA;3.启动所有的定时器"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="839b9ec5-aa56-48b3-b16d-cff32fd17bff"
+            name="WM_CREATE:&#xD;&#xA;1.初始化背景&#xD;&#xA;2.初始化玩家飞机&#xD;&#xA;3.启动所有的定时器"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e75cdfd9-caf6-4c73-a941-c7f93696ec88"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="50f3e33d-086f-4635-90e1-147ae84afc91"
+                  LastKnownName="WM_PAINT:&#xD;&#xA;1.背景的显示&#xD;&#xA;2.玩家飞机的显示&#xD;&#xA;3.所有炮弹的显示&#xD;&#xA;4.所有地然飞机显示&#xD;&#xA;5.所有爆炸的敌人飞机显示"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="50f3e33d-086f-4635-90e1-147ae84afc91"
+            name="WM_PAINT:&#xD;&#xA;1.背景的显示&#xD;&#xA;2.玩家飞机的显示&#xD;&#xA;3.所有炮弹的显示&#xD;&#xA;4.所有地然飞机显示&#xD;&#xA;5.所有爆炸的敌人飞机显示"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="84287070-a882-40ed-9691-b85b4e4ca494"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c562862a-6730-414d-986c-5a116ae9a476"
+                  LastKnownName="WM_KEYDOWN：&#xD;&#xA;1.玩家飞机移动&#xD;&#xA;2.重绘"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c562862a-6730-414d-986c-5a116ae9a476"
+            name="WM_KEYDOWN：&#xD;&#xA;1.玩家飞机移动&#xD;&#xA;2.重绘"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e3be046f-b32a-4d91-b24c-4d185b564f89"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="20c8f2e9-c2dc-4138-af29-d8064e968e9d"
+                  LastKnownName="WM_TIMER"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="20c8f2e9-c2dc-4138-af29-d8064e968e9d"
+            name="WM_TIMER"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="43ccdaec-a766-495f-b6dd-e07d67a94b4a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="99486074-cfba-47e6-bc2d-a45f087ec84d"
+                  LastKnownName="1.背景移动"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a0a54aa5-7044-4160-9312-5c8dcba4eb0c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="823f8f75-b189-45a5-bb55-0b8b6518e26e"
+                  LastKnownName="2.玩家飞机发射炮弹"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="9f47f481-443b-43a0-9ffe-8686889e00fc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7770a5a3-2578-4875-8aa7-d7556b478f61"
+                  LastKnownName="3.1所有炮弹移动&#xD;&#xA;3.2判断炮弹打敌人飞机"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="0d64ecdc-5a03-427f-add6-a8585a103473"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7c4db362-ab99-48d2-860c-25eee0a00c4e"
+                  LastKnownName="4.创建敌人飞机"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="3499dfde-1138-408d-a65b-69286e79e1e1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="13fb00d2-38ce-44c9-a4b4-bddfa7078a4c"
+                  LastKnownName="5.1敌人飞机移动&#xD;&#xA;5.2判断是否撞玩家飞机&#xD;&#xA;5.3游戏结束"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a13f0508-1d65-4d1e-828f-a719b86e0156"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c1b4695a-f5cb-46ce-8465-ab9a94bca5fe"
+                  LastKnownName="6.切换爆照的效果图"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="99486074-cfba-47e6-bc2d-a45f087ec84d"
+            name="1.背景移动"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3e62aaed-bd78-43a6-85ef-3032daae6c87"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ce40c3f7-7802-4b8e-bc4b-375b13372354"
+                  LastKnownName="重绘"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7770a5a3-2578-4875-8aa7-d7556b478f61"
+            name="3.1所有炮弹移动&#xD;&#xA;3.2判断炮弹打敌人飞机"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="af9939c0-339d-42a1-94ef-6733efb6aaf2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ce40c3f7-7802-4b8e-bc4b-375b13372354"
+                  LastKnownName="重绘"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="823f8f75-b189-45a5-bb55-0b8b6518e26e"
+            name="2.玩家飞机发射炮弹"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ccd5ae11-0539-487c-aa21-e0d2d2a5c550"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ce40c3f7-7802-4b8e-bc4b-375b13372354"
+                  LastKnownName="重绘"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7c4db362-ab99-48d2-860c-25eee0a00c4e"
+            name="4.创建敌人飞机"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1dcc290a-8864-4b05-b6c6-07cc2417c410"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ce40c3f7-7802-4b8e-bc4b-375b13372354"
+                  LastKnownName="重绘"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="13fb00d2-38ce-44c9-a4b4-bddfa7078a4c"
+            name="5.1敌人飞机移动&#xD;&#xA;5.2判断是否撞玩家飞机&#xD;&#xA;5.3游戏结束"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="75323dd4-d6fd-47d9-8f3f-a41880d3147e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ce40c3f7-7802-4b8e-bc4b-375b13372354"
+                  LastKnownName="重绘"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a792f9bf-a45a-425a-b976-6eaac4c63d6c"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="036e5348-6b1e-48fe-907c-4c31178c3416"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c1b4695a-f5cb-46ce-8465-ab9a94bca5fe"
+            name="6.切换爆照的效果图"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d8ce23e5-45b8-4346-9f97-b7f000c3df0b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ce40c3f7-7802-4b8e-bc4b-375b13372354"
+                  LastKnownName="重绘"
+                  LastKnownLocation="飞机大战类图.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ce40c3f7-7802-4b8e-bc4b-375b13372354"
+            name="重绘"
+            isLeaf="false" />
+          <activityFinalNode
+            Id="036e5348-6b1e-48fe-907c-4c31178c3416"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
