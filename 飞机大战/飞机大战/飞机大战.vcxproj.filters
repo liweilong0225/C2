@@ -18,7 +18,19 @@
     <ClCompile Include="01WinMain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="PlanApp.cpp">
+    <ClCompile Include="Back.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneApp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Gunner.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GunnerBox.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,8 +38,51 @@
     <ClInclude Include="CGameApp.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="PlanApp.h">
+    <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Sys.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Back.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneApp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Gunner.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GunnerBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="飞机大战.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ammo.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\big.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\middle.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\p.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\small.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>

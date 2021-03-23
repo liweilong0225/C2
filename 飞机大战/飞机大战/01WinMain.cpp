@@ -25,7 +25,7 @@ int CALLBACK WinMain(HINSTANCE hInstance,HINSTANCE hPreInstance,LPSTR lpCmdLine,
 	wndclass.hIconSm = 0;
 	wndclass.hInstance = hInstance;
 	wndclass.lpfnWndProc = WindowProc;
-	wndclass.lpszClassName = "游戏壳";
+	wndclass.lpszClassName = "飞机大战";
 	wndclass.lpszMenuName = 0;
 	wndclass.style = CS_HREDRAW|CS_VREDRAW;
 	// 2.  注册
@@ -35,7 +35,7 @@ int CALLBACK WinMain(HINSTANCE hInstance,HINSTANCE hPreInstance,LPSTR lpCmdLine,
 		return 0;
 	}
 	//  3.  创建
-	hwnd = CreateWindow("游戏壳","游戏壳",WS_OVERLAPPEDWINDOW,0,0,500,500,0,0,hInstance,0);
+	hwnd = CreateWindow("飞机大战","飞机大战",WS_OVERLAPPEDWINDOW,0,0,380+16,550+38,0,0,hInstance,0);
 	if(hwnd == 0)
 	{
 		MessageBox(0,"创建失败","提示",MB_OK);

@@ -77,11 +77,32 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="01WinMain.cpp" />
-    <ClCompile Include="PlanApp.cpp" />
+    <ClCompile Include="Back.cpp" />
+    <ClCompile Include="Gunner.cpp" />
+    <ClCompile Include="GunnerBox.cpp" />
+    <ClCompile Include="PlaneApp.cpp" />
+    <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Back.h" />
     <ClInclude Include="CGameApp.h" />
-    <ClInclude Include="PlanApp.h" />
+    <ClInclude Include="Gunner.h" />
+    <ClInclude Include="GunnerBox.h" />
+    <ClInclude Include="PlaneApp.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Sys.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="飞机大战.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ammo.bmp" />
+    <Image Include="res\big.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\middle.bmp" />
+    <Image Include="res\p.bmp" />
+    <Image Include="res\small.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
