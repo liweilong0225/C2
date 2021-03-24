@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e01f5cb2-201b-4533-a4c3-fa8e8788fea0" name="UMLClassDiagram1" linkedPackageId="ace6612a-2828-44d3-addb-fbcd5d246c2f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="b8a03358-627f-47b0-a573-3b5cc1305e8b">
-      <profileInstance Id="8bebf3b2-a5e8-49f7-9417-ef50da4d8be0" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c1861b13-4efc-49ab-8af1-54bbccbf2e78">
-      <profileInstance Id="23835f19-41fd-45dd-9479-e50be57de0c7" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="e01f5cb2-201b-4533-a4c3-fa8e8788fea0" name="UMLClassDiagram1" linkedPackageId="ace6612a-2828-44d3-addb-fbcd5d246c2f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="b5cb9222-7a7b-4576-b1c6-2e0a948cbde4" name="CBack" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -117,13 +103,13 @@
             <elementDefinition Id="3d54b343-8b5f-4ceb-b8b1-f43adc772783" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="1c128c2c-c787-49c0-b690-5f190fd11574" name="HINSTANCE hIns" direction="In" isUnique="false">
-                  <elementDefinition Id="cfb19ff7-54a4-4767-97d9-3163c7ff749a" />
+                <parameter Id="52a76b2d-a9c7-4d9a-a6fb-7675515cdf4b" name="HINSTANCE hIns" direction="In" isUnique="false">
+                  <elementDefinition Id="a53aca50-3727-4c2a-a4c7-9ab017f4bc26" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="1893b25e-5dbd-468d-a878-3d55f555f30f" name="CGunner&amp; gunBox" direction="In" isUnique="false">
-                  <elementDefinition Id="3f186148-a4e5-4e6d-aff8-ad77dcf275b5" />
+                <parameter Id="83e585db-eebe-4c44-afed-8220165bcf5b" name="CGunnerBox&amp; gunBox" direction="In" isUnique="false">
+                  <elementDefinition Id="7a61be65-4ea1-405b-947f-f735358c6f17" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -612,5 +598,19 @@
   </packagedElements>
   <package Id="ace6612a-2828-44d3-addb-fbcd5d246c2f" name="飞机大战类图">
     <elementDefinition Id="e0cc66fc-3ab8-4476-b738-4fc826bc4d2e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b8a03358-627f-47b0-a573-3b5cc1305e8b">
+        <profileInstance Id="8bebf3b2-a5e8-49f7-9417-ef50da4d8be0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c1861b13-4efc-49ab-8af1-54bbccbf2e78">
+        <profileInstance Id="23835f19-41fd-45dd-9479-e50be57de0c7" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

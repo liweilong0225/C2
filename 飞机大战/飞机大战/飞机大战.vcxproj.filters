@@ -33,6 +33,24 @@
     <ClCompile Include="GunnerBox.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="FoePlane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BigFoePlane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MidFoePlane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SmallFoePlane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FoePlaneBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BlastFoePlaneBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CGameApp.h">
@@ -57,6 +75,24 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="GunnerBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FoePlane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BigFoePlane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MidFoePlane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SmallFoePlane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FoePlaneBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BlastFoePlaneBox.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

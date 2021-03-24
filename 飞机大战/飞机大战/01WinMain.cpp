@@ -1,11 +1,13 @@
 #include <windows.h>
 #include"CGameApp.h"
+#include<time.h>
 
 LRESULT CALLBACK WindowProc(HWND hwnd,UINT uMsg,WPARAM wParam,LPARAM lParam);
 HINSTANCE hIns = 0;
 
 int CALLBACK WinMain(HINSTANCE hInstance,HINSTANCE hPreInstance,LPSTR lpCmdLine,int nShowCmd)
 {
+	srand((unsigned int)time(0));
 	//-----------------------------------------------------
 	HWND hwnd = 0;
 	MSG msg;       //  装消息的结构体

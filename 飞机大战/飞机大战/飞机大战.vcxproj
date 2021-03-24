@@ -78,19 +78,31 @@
   <ItemGroup>
     <ClCompile Include="01WinMain.cpp" />
     <ClCompile Include="Back.cpp" />
+    <ClCompile Include="BigFoePlane.cpp" />
+    <ClCompile Include="BlastFoePlaneBox.cpp" />
+    <ClCompile Include="FoePlane.cpp" />
+    <ClCompile Include="FoePlaneBox.cpp" />
     <ClCompile Include="Gunner.cpp" />
     <ClCompile Include="GunnerBox.cpp" />
+    <ClCompile Include="MidFoePlane.cpp" />
     <ClCompile Include="PlaneApp.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="SmallFoePlane.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Back.h" />
+    <ClInclude Include="BigFoePlane.h" />
+    <ClInclude Include="BlastFoePlaneBox.h" />
     <ClInclude Include="CGameApp.h" />
+    <ClInclude Include="FoePlane.h" />
+    <ClInclude Include="FoePlaneBox.h" />
     <ClInclude Include="Gunner.h" />
     <ClInclude Include="GunnerBox.h" />
+    <ClInclude Include="MidFoePlane.h" />
     <ClInclude Include="PlaneApp.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SmallFoePlane.h" />
     <ClInclude Include="Sys.h" />
   </ItemGroup>
   <ItemGroup>
