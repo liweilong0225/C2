@@ -1,0 +1,199 @@
+﻿生成启动时间为 2021/3/26 11:15:46。
+     1>项目“E:\Visual Studio练习\C2\18类模板\18类模板\18类模板.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "类模板.cpp"
+         类模板.cpp
+     1>e:\visual studio练习\c2\18类模板\18类模板\类模板.cpp(36): error C2679: 二进制“<<”: 没有找到接受“CAnimal<KK>”类型的右操作数的运算符(或没有可接受的转换)
+                 with
+                 [
+                     KK=int
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(695): 可能是“std::basic_ostream<_Elem,_Traits> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<_Elem,_Traits> &,const char *)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(742): 或       “std::basic_ostream<_Elem,_Traits> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<_Elem,_Traits> &,char)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(780): 或       “std::basic_ostream<_Elem,_Traits> &std::operator <<<std::char_traits<char>>(std::basic_ostream<_Elem,_Traits> &,const char *)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(827): 或       “std::basic_ostream<_Elem,_Traits> &std::operator <<<std::char_traits<char>>(std::basic_ostream<_Elem,_Traits> &,char)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(953): 或       “std::basic_ostream<_Elem,_Traits> &std::operator <<<std::char_traits<char>>(std::basic_ostream<_Elem,_Traits> &,const signed char *)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(960): 或       “std::basic_ostream<_Elem,_Traits> &std::operator <<<std::char_traits<char>>(std::basic_ostream<_Elem,_Traits> &,signed char)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(967): 或       “std::basic_ostream<_Elem,_Traits> &std::operator <<<std::char_traits<char>>(std::basic_ostream<_Elem,_Traits> &,const unsigned char *)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(974): 或       “std::basic_ostream<_Elem,_Traits> &std::operator <<<std::char_traits<char>>(std::basic_ostream<_Elem,_Traits> &,unsigned char)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(984): 或       “std::basic_ostream<_Elem,_Traits> &std::operator <<<char,std::char_traits<char>,TT>(std::basic_ostream<_Elem,_Traits> &&,const _Ty &)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     TT=CAnimal<int>,
+                     _Ty=CAnimal<int>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(1101): 或       “std::basic_ostream<_Elem,_Traits> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<_Elem,_Traits> &,const std::error_code &)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(201): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(std::basic_ostream<_Elem,_Traits> &(__cdecl *)(std::basic_ostream<_Elem,_Traits> &))”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(207): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(std::basic_ios<_Elem,_Traits> &(__cdecl *)(std::basic_ios<_Elem,_Traits> &))”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(214): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(221): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(std::_Bool)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(241): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(short)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(275): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(unsigned short)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(295): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(int)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(320): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(unsigned int)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(340): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(long)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(360): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(unsigned long)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(381): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(__int64)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(401): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(unsigned __int64)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(422): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(float)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(442): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(double)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(462): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(long double)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(482): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(const void *)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(502): 或       “std::basic_ostream<_Elem,_Traits> &std::basic_ostream<_Elem,_Traits>::operator <<(std::basic_streambuf<_Elem,_Traits> *)”
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 尝试匹配参数列表“(std::ostream, CAnimal<KK>)”时
+                 with
+                 [
+                     KK=int
+                 ]
+                 e:\visual studio练习\c2\18类模板\18类模板\类模板.cpp(35): 编译类 模板 成员函数“void CPerson<TT>::Show(void)”时
+                 with
+                 [
+                     TT=CAnimal<int>
+                 ]
+                 e:\visual studio练习\c2\18类模板\18类模板\类模板.cpp(60): 参见对正在编译的函数 模板 实例化“void CPerson<TT>::Show(void)”的引用
+                 with
+                 [
+                     TT=CAnimal<int>
+                 ]
+                 e:\visual studio练习\c2\18类模板\18类模板\类模板.cpp(59): 参见对正在编译的类 模板 实例化“CPerson<TT>”的引用
+                 with
+                 [
+                     TT=CAnimal<int>
+                 ]
+     1>已完成生成项目“E:\Visual Studio练习\C2\18类模板\18类模板\18类模板.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.79
